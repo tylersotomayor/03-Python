@@ -3,6 +3,7 @@ import os
 
 filename = 'budget_data.csv'
 
+
 #Variables for month and revenue data
 months = []
 revenue = []
@@ -42,7 +43,7 @@ average_delta = round(total_revenue/total_months, 2)
 
 
 #Set path for output file
-output_path = os.path.join('..','03-Python','summary.txt')
+output_path = os.path.join('..','python-challenge','summary.txt')
 
 #Opens the output destination in write mode and prints the summary
 with open(output_path, 'w') as writefile:
@@ -57,3 +58,4 @@ with open(output_path, 'w') as writefile:
 #Opens the output file in r mode and prints to Terminal
 with open(output_path, 'r') as readfile:
 	print(readfile.read())
+

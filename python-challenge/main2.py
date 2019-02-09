@@ -2,7 +2,7 @@ import os
 import csv
 
 # Identifies file with poll data
-csvpath = os.path.join('..','03-Python', 'election_data.csv')
+csvpath = os.path.join('..','python-challenge', 'election_data.csv')
 
 #Creates dictionary to be used for candidate name and vote count.
 poll = {}
@@ -59,7 +59,7 @@ if len(winner_list) > 1:
         winner = winner + ", " + winner_list[w]
 
 #prints to file
-output_file = os.path.join('..','03-Python', 'election_results.txt')
+output_file = os.path.join('..','python-challenge', 'election_results.txt')
 
 with open(output_file, 'w') as txtfile:
     txtfile.writelines('Election Results \n------------------------- \nTotal Votes: ' + str(total_votes) + 
